@@ -1126,7 +1126,5 @@ str_t machine_genblock(machine_t *m) {
     source = tracer_append_epilogue(&tracer, source);
     source = str_append(source, CODEGEN_EPILOGUE);
 
-    printf("%s\n", source);
-    fatal("");
     return source;
 }
